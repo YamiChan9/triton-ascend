@@ -28,7 +28,8 @@ from .utils import _deprecated
 
 
 def _is_a5_target(_semantic) -> bool:
-    return is_compile_on_910_95(_semantic.builder.options.arch)
+    # return is_compile_on_910_95(_semantic.builder.options.arch)
+    return True
 
 
 class _FlipStaticRange:
