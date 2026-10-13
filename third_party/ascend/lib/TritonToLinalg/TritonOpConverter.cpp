@@ -2174,7 +2174,8 @@ getA2A3LibdeviceWorkspaceSpecs() {
   // empty spec.
   static const llvm::StringMap<A2A3WorkspaceSpec> specs = {
       {"__hmf_tan_fp32",
-       {{A2A3WorkspaceTileCount::Eight, A2A3WorkspaceElementType::F32}}},
+       {{A2A3WorkspaceTileCount::Seven, A2A3WorkspaceElementType::F32,
+         true}}},
       {"__hmf_tanh_fp32",
        {{A2A3WorkspaceTileCount::Three, A2A3WorkspaceElementType::F32, true}}},
       {"__hmf_copysign_fp32",
