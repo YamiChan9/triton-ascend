@@ -2183,7 +2183,7 @@ getA2A3LibdeviceWorkspaceSpecs() {
       {"__hmf_atan_fp32",
        {{A2A3WorkspaceTileCount::Five, A2A3WorkspaceElementType::F32, true}}},
       {"__hmf_atan2_fp32",
-       {{A2A3WorkspaceTileCount::Ten, A2A3WorkspaceElementType::F32}}},
+       {{A2A3WorkspaceTileCount::Four, A2A3WorkspaceElementType::F32, true}}},
       {"__hmf_acosh_fp32",
        {{A2A3WorkspaceTileCount::One, A2A3WorkspaceElementType::F32, true}}},
       {"__hmf_asinh_fp32",

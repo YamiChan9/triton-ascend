@@ -49,7 +49,7 @@
 
 // A2A3-LABEL: func.func @test_atan2_2048
 // A2A3: hivm.hir.custom
-// A2A3-SAME: extra_buffers_sizes = [640]
+// A2A3-SAME: extra_buffers_sizes = [8192]
 // A2A3-SAME: extra_buffers_types = [f32]
 // A2A3-SAME: symbol = "atan2_fp32"
 
