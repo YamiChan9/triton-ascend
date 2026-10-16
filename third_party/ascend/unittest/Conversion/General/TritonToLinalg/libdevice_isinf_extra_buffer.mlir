@@ -31,19 +31,19 @@
 // A5-SAME: symbol = "isinf_fp32"
 
 // Arithmetic-only A2/A3 entry points can use operation-sized rows. tan is one
-// count-mode chain over the whole tensor: seven stride-sized rows, so the
+// count-mode chain over the whole tensor: six stride-sized rows, so the
 // buffer grows with the aligned element count. Operators that still compare
 // in normal mode keep a fixed 64-lane workspace.
 
 // A2A3-LABEL: func.func @test_tan_16
 // A2A3: hivm.hir.custom
-// A2A3-SAME: extra_buffers_sizes = [112]
+// A2A3-SAME: extra_buffers_sizes = [96]
 // A2A3-SAME: extra_buffers_types = [f32]
 // A2A3-SAME: symbol = "tan_fp32"
 
 // A2A3-LABEL: func.func @test_tan_2048
 // A2A3: hivm.hir.custom
-// A2A3-SAME: extra_buffers_sizes = [14336]
+// A2A3-SAME: extra_buffers_sizes = [12288]
 // A2A3-SAME: extra_buffers_types = [f32]
 // A2A3-SAME: symbol = "tan_fp32"
 
@@ -55,7 +55,7 @@
 
 // A2A3-LABEL: func.func @test_fast_pow_2048
 // A2A3: hivm.hir.custom
-// A2A3-SAME: extra_buffers_sizes = [512]
+// A2A3-SAME: extra_buffers_sizes = [10240]
 // A2A3-SAME: extra_buffers_types = [f32]
 // A2A3-SAME: symbol = "fast_pow_fp32"
 

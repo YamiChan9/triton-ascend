@@ -2903,7 +2903,7 @@ def cyl_bessel_i0(arg0: core.tensor, _semantic=None):
     :rtype: ``float32``
     """
     arg0 = _semantic.to_tensor(arg0)
-    if _is_a5_target(_semantic) and arg0.dtype == core.dtype("fp32"):
+    if arg0.dtype == core.dtype("fp32"):
         return core.extern_elementwise("", "", [arg0], {
             (core.dtype("fp32"), ): ("__hmf_cyl_bessel_i0_fp32", core.dtype("fp32")),
         }, is_pure=True, _semantic=_semantic)

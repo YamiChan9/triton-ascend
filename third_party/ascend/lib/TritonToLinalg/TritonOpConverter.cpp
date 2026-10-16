@@ -2174,8 +2174,7 @@ getA2A3LibdeviceWorkspaceSpecs() {
   // empty spec.
   static const llvm::StringMap<A2A3WorkspaceSpec> specs = {
       {"__hmf_tan_fp32",
-       {{A2A3WorkspaceTileCount::Seven, A2A3WorkspaceElementType::F32,
-         true}}},
+       {{A2A3WorkspaceTileCount::Six, A2A3WorkspaceElementType::F32, true}}},
       {"__hmf_tanh_fp32",
        {{A2A3WorkspaceTileCount::Three, A2A3WorkspaceElementType::F32, true}}},
       {"__hmf_copysign_fp32",
@@ -2219,7 +2218,7 @@ getA2A3LibdeviceWorkspaceSpecs() {
       {"__hmf_hypot_fp32",
        {{A2A3WorkspaceTileCount::One, A2A3WorkspaceElementType::F32, true}}},
       {"__hmf_cyl_bessel_i0_fp32",
-       {{A2A3WorkspaceTileCount::Six, A2A3WorkspaceElementType::F32}}},
+       {{A2A3WorkspaceTileCount::Six, A2A3WorkspaceElementType::F32, true}}},
       {"__hmf_erfinv_fp32",
        {{A2A3WorkspaceTileCount::Four, A2A3WorkspaceElementType::F32, true}}},
       {"__hmf_tgamma_fp32",
@@ -2251,7 +2250,7 @@ getA2A3LibdeviceWorkspaceSpecs() {
     {"__hmf_fast_cos_fp32",
        {{A2A3WorkspaceTileCount::Four, A2A3WorkspaceElementType::F32, true}}},
     {"__hmf_fast_pow_fp32",
-       {{A2A3WorkspaceTileCount::Eight, A2A3WorkspaceElementType::F32}}},
+       {{A2A3WorkspaceTileCount::Five, A2A3WorkspaceElementType::F32, true}}},
     {"__hmf_fast_sin_fp32",
        {{A2A3WorkspaceTileCount::Four, A2A3WorkspaceElementType::F32, true}}},
     {"__hmf_fast_tan_fp32",
